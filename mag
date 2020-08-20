@@ -4,12 +4,16 @@
 import time
 from playsound import playsound
 
-seconds = 195
+seconds = 35
 while seconds > 0:
+    if seconds == 195:
+        playsound('C:/Users/kamik/code/projects/pso_timer/sounds/jingle.wav') # timer start jingle
     if seconds == 30:
-        print("30 seconds to go...")
+        print("30 seconds to go...get ready to\n------------------------\nF   E   E   D     M   E\n------------------------")
     if seconds == 1:
-        playsound('C:/Users/kamik/code/projects/pso_timer/sounds/jingle.wav')
-        seconds = 216 # restarts countdown and adds 20 seconds buffer for feeding time
+        playsound('C:/Users/kamik/code/projects/pso_timer/sounds/feedingJingle+buffer.mp3') # 24sec long
+        seconds = 196 # restarts countdown and adds 25 seconds buffer for feeding time
+
+
     time.sleep(1) # every second
     seconds -= 1 # remove one second
