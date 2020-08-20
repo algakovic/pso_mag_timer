@@ -15,9 +15,9 @@ Basic program to increase our quality of life while feeding PSO mags.
 - [x]  Notify when timer reaches 0 preferably by sound
 - [x]  buffer some time so that I can feed (20 seconds)
 - [x]  Make timer restart on it's own
-- [ ]  add Bonus 195 seconds starting sound to know when timer actually begins.
-- [ ]  30 seconds warning...  going to be eye sore. ASCII ART implementation?
-- [ ]  add in anywhere executability
+- [x]  add Bonus 195 seconds starting sound to know when timer actually begins.
+- [x]  30 seconds warning...  going to be eye sore. ASCII ART implementation?
+- [x]  add in anywhere executability
 
 ## Conclusion
 
