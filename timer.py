@@ -2,9 +2,14 @@
 # A simple timer program used to feed Mags
 
 import time
-min = int(input('>>'))
-while min > 0:
-    print(f"{min} minutes left..")
-    time.sleep(60) # every minute
-    min -= 1 # remove one minute 
+from playsound import playsound
 
+seconds = 45
+while seconds > 0:
+    if seconds == 30:
+        print("30 seconds to go...")
+    if seconds == 1:
+        playsound('C:/Users/kamik/code/projects/pso_timer/sounds/jingle.wav')
+
+    time.sleep(1) # every second
+    seconds -= 1 # remove one second
