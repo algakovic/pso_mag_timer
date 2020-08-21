@@ -3,7 +3,7 @@
 
 import time
 from playsound import playsound
-
+from subprocess import call
 seconds = 35
 while seconds > 0:
     if seconds == 195:
@@ -12,6 +12,7 @@ while seconds > 0:
         print("30 seconds to go...get ready to\n------------------------\nF   E   E   D     M   E\n------------------------")
     if seconds == 1:
         playsound('C:/Users/kamik/code/projects/pso_timer/sounds/feedingJingle+buffer.mp3') # 24sec long
+        call('clear')
         seconds = 196 # restarts countdown and adds 25 seconds buffer for feeding time
 
 
