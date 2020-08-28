@@ -13,7 +13,7 @@ def timer(seconds=int(input("How many seconds? "))):
             print(seconds)
         if seconds == 1:
             print("------------------------\nF   E   E   D     M   E\n------------------------")
-            playsound('C:/Users/kamik/code/projects/pso_timer/sounds/AlpineCheckPoint.wav')
+            playsound('C:/Users/kamik/code/projects/pso_timer/sounds/jingle.wav')
             time.sleep(10)
             call('clear') # clear terminal screen
             seconds = 215
