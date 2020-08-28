@@ -7,10 +7,10 @@ from subprocess import call
 
 def timer(sec=int(input("How many seconds? "))):
     while seconds > 0:
-        if seconds == 195:
-            playsound('C:/Users/kamik/code/projects/pso_timer/sounds/jingle.wav') # timer start jingle
         if seconds == 30:
-            print("30 seconds to go...get ready to\n------------------------\nF   E   E   D     M   E\n------------------------")
+            print("30 SECONDS REMAINING...")
+        if seconds in range(11):
+            print(sec)
         if seconds == 1:
             playsound('C:/Users/kamik/code/projects/pso_timer/sounds/feedingJingle+buffer.mp3') # 24sec long
             call('clear')
