@@ -5,12 +5,12 @@ import time
 from playsound import playsound
 from subprocess import call
 
-def timer(sec=int(input("How many seconds? "))):
+def timer(seconds=int(input("How many seconds? "))):
     while seconds > 0:
         if seconds == 30:
             print("30 SECONDS REMAINING...")
         if seconds in range(11):
-            print(sec)
+            print(seconds)
         if seconds == 1:
             print("------------------------\nF   E   E   D     M   E\n------------------------")
             playsound('C:/Users/kamik/code/projects/mag_timer/sounds/AlpineCheckPoint.wav')
