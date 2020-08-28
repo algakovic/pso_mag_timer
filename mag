@@ -12,11 +12,12 @@ def timer(sec=int(input("How many seconds? "))):
         if seconds in range(11):
             print(sec)
         if seconds == 1:
-            playsound('C:/Users/kamik/code/projects/pso_timer/sounds/feedingJingle+buffer.mp3') # 24sec long
-            call('clear')
-            seconds = 196 # restarts countdown and adds 25 seconds buffer for feeding time
+            print("------------------------\nF   E   E   D     M   E\n------------------------")
+            playsound('C:/Users/kamik/code/projects/mag_timer/sounds/AlpineCheckPoint.wav')
+            time.sleep(10)
+            call('clear') # clear terminal screen
+            seconds = 215 
+        time.sleep(1) 
+        seconds -= 1 
 
-
-    time.sleep(1) # every second
-    seconds -= 1 # remove one second
 timer()
