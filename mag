@@ -1,11 +1,12 @@
 #!/usr/bin/env python
-# A simple timer program used to feed Mags
+'''A simple timer program used to feed Mags'''
 
 import time
-from playsound import playsound
 from subprocess import call
+from playsound import playsound # These events block timer.sleep()
 
 def timer(seconds=int(input("How many seconds? "))):
+    '''Main timer loop'''
     while seconds > 0:
         if seconds == 30:
             print("30 SECONDS REMAINING...")
@@ -14,9 +15,9 @@ def timer(seconds=int(input("How many seconds? "))):
         if seconds == 1:
             print("------------------------\nF   E   E   D     M   E\n------------------------")
             playsound('C:/Users/kamik/code/projects/pso_timer/sounds/jingle.wav')
-            time.sleep(10)
+            time.sleep(20)
             call('clear') # clear terminal screen
-            seconds = 215
+            seconds = 210
         time.sleep(1)
         seconds -= 1
 
